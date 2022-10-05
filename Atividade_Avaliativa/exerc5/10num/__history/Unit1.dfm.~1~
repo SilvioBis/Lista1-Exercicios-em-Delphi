@@ -1,0 +1,103 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'edtMedia'
+  ClientHeight = 401
+  ClientWidth = 880
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 64
+    Top = 152
+    Width = 38
+    Height = 16
+    Caption = 'M'#233'dia'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 304
+    Top = 152
+    Width = 36
+    Height = 16
+    Caption = 'Maior'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 560
+    Top = 152
+    Width = 41
+    Height = 16
+    Caption = 'Menor'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object edtMaior: TEdit
+    Left = 304
+    Top = 176
+    Width = 121
+    Height = 24
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edtMenor: TEdit
+    Left = 560
+    Top = 176
+    Width = 121
+    Height = 24
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtMedia: TEdit
+    Left = 64
+    Top = 179
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 320
+    Top = 48
+    Width = 169
+    Height = 65
+    Caption = 'Digite os Dados'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+end

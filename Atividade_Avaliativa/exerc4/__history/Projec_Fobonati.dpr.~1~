@@ -1,0 +1,14 @@
+program Projec_Fobonati;
+
+uses
+  Vcl.Forms,
+  calcFibo in 'calcFibo.pas' {frmFibo};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmFibo, frmFibo);
+  Application.Run;
+end.

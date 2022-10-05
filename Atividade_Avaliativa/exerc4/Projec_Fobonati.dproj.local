@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/15 21:23:37.000.581,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/15 21:57:34.000.242,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Desenvolvimento Sistemas - Edriano\Atividade1509\exerc4\calcFibo.dfm</Transaction>
+    <Transaction>2022/09/15 21:57:34.000.242,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Desenvolvimento Sistemas - Edriano\Atividade1509\exerc4\calcFibo.pas</Transaction>
+    <Transaction>2022/09/15 21:57:40.000.669,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Desenvolvimento Sistemas - Edriano\Atividade1509\exerc4\c.dproj</Transaction>
+    <Transaction>2022/09/21 21:52:18.000.316,E:\Desenvolvimento Sistemas - Edriano\Atividade1509\exerc4\Projec_Fobonati.dproj=E:\Desenvolvimento Sistemas - Edriano\Atividade1509\exerc4\c.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

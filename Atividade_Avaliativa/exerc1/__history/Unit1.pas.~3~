@@ -1,0 +1,57 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmMedia = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    edtV1: TEdit;
+    edtV2: TEdit;
+    edtV3: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    lsmedia: TListBox;
+    Label4: TLabel;
+    procedure Button3Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMedia: TfrmMedia;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMedia.Button1Click(Sender: TObject);
+var v1,v2,v3: integer ;
+begin
+  edtV1 :=StrToInt(v1.Text);
+  edtV2 :=StrToInt(v2.Text);
+  v3 :=StrToInt(v3.Text);
+end;
+
+procedure TfrmMedia.Button2Click(Sender: TObject);
+begin
+ lsMedia.Clear;
+end;
+
+procedure TfrmMedia.Button3Click(Sender: TObject);
+begin
+      if Application.MessageBox('Deseja Sair?','Comfirme',
+ MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2) = id_yes then  close;
+end;
+
+end.

@@ -1,0 +1,106 @@
+object edt5: Tedt5
+  Left = 0
+  Top = 0
+  Caption = 'Media dos 3 Valores'
+  ClientHeight = 443
+  ClientWidth = 819
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 64
+    Top = 56
+    Width = 33
+    Height = 13
+    Caption = 'Valor 1'
+  end
+  object Label2: TLabel
+    Left = 240
+    Top = 56
+    Width = 33
+    Height = 13
+    Caption = 'Valor 2'
+  end
+  object Label3: TLabel
+    Left = 416
+    Top = 56
+    Width = 33
+    Height = 13
+    Caption = 'Valor 3'
+  end
+  object Label4: TLabel
+    Left = 64
+    Top = 141
+    Width = 103
+    Height = 13
+    Caption = 'A Soma dos 3 valores'
+  end
+  object edtV1: TEdit
+    Left = 64
+    Top = 75
+    Width = 121
+    Height = 21
+    TabOrder = 0
+  end
+  object edtV2: TEdit
+    Left = 240
+    Top = 75
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object edtV3: TEdit
+    Left = 416
+    Top = 75
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 96
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Calcular'
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 264
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 416
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Sair'
+    TabOrder = 5
+    OnClick = Button3Click
+  end
+  object edtRes: TEdit
+    Left = 64
+    Top = 168
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+  object edtMedia: TEdit
+    Left = 264
+    Top = 168
+    Width = 121
+    Height = 21
+    TabOrder = 7
+  end
+end

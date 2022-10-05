@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C0537E75-650C-4CAF-B0FA-26CCFB17F74E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="tresvalores.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\exerc4\c.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="tresvalores">
+        <MSBuild Projects="tresvalores.dproj"/>
+    </Target>
+    <Target Name="tresvalores:Clean">
+        <MSBuild Projects="tresvalores.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tresvalores:Make">
+        <MSBuild Projects="tresvalores.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="c">
+        <MSBuild Projects="..\exerc4\c.dproj"/>
+    </Target>
+    <Target Name="c:Clean">
+        <MSBuild Projects="..\exerc4\c.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="c:Make">
+        <MSBuild Projects="..\exerc4\c.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="tresvalores;c"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="tresvalores:Clean;c:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="tresvalores:Make;c:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

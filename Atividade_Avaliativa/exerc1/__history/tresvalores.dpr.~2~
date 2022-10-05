@@ -1,0 +1,14 @@
+program tresvalores;
+
+uses
+  Vcl.Forms,
+  Unit1 in 'Unit1.pas' {frmMedia};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMedia, frmMedia);
+  Application.Run;
+end.
